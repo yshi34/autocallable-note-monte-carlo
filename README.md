@@ -78,16 +78,7 @@ where:
 
 The simulation uses the exact GBM transition:
 
-$$
-S_{t+\Delta t}
-=
-S_t
-\exp\left[
-\left(r-q-\frac{1}{2}\sigma^2\right)\Delta t
-+
-\sigma\sqrt{\Delta t}\,Z
-\right]
-$$
+$$S_{t+\Delta t} = S_t \exp\left[\left(r-q-\frac{1}{2}\sigma^2\right)\Delta t + \sigma\sqrt{\Delta t}\,Z \right] $$
 
 where:
 
@@ -101,14 +92,7 @@ simulation paths.
 For each simulated path, the payoff is discounted according to its
 path-dependent payment time. The model present value is estimated as:
 
-$$
-V_0
-=
-\mathbb E^{\mathbb Q}
-\left[
-e^{-r\theta}P
-\right]
-$$
+$$V_0 = \mathbb E^{\mathbb Q} \left[e^{-r\theta}P\right]$$
 
 where $\theta$ is the payment time and $P$ is the corresponding payoff.
 
