@@ -54,12 +54,12 @@ $$
 Under the risk-neutral measure, the underlying follows:
 
 $$
-dS_t = (r-q)S_t\,dt+\sigma S_t\,dW_t^{\mathbb Q}
+dS_t = (r-q)S_t\dt+\sigma S_t\dW_t^{\mathbb Q}
 $$
 
 The simulation uses the exact GBM transition:
 
-$$
+$
 S_{t+\Delta t}
 =
 S_t
@@ -68,7 +68,7 @@ S_t
 +
 \sigma\sqrt{\Delta t}Z
 \right]
-$$
+$
 
 where:
 
