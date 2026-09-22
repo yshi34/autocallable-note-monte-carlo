@@ -65,7 +65,7 @@ $$
 Under the risk-neutral measure, the underlying follows:
 
 $$
-dS_t=(r-q)S_t\,dt+\sigma S_t\,dW_t^{\mathbb Q}
+dS_t=(r-q)S_t dt+\sigma S_t dW_t^{\mathbb Q}
 $$
 
 where:
