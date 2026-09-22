@@ -33,33 +33,33 @@ The baseline product has the following terms:
 If the underlying is at or above the autocall barrier on a quarterly
 observation date, the note terminates and pays:
 
-\[
+$$
 N(1+c\tau)
-\]
+$$
 
 If the note reaches maturity without a knock-in event, it pays:
 
-\[
+$$
 N(1+cT)
-\]
+$$
 
 If the note reaches maturity after a knock-in event, it pays:
 
-\[
+$$
 N\frac{S_T}{S_0}
-\]
+$$
 
 ## Model
 
 Under the risk-neutral measure, the underlying follows:
 
-\[
+$$
 dS_t = (r-q)S_t\,dt+\sigma S_t\,dW_t^{\mathbb Q}
-\]
+$$
 
 The simulation uses the exact GBM transition:
 
-\[
+$$
 S_{t+\Delta t}
 =
 S_t
@@ -68,26 +68,26 @@ S_t
 +
 \sigma\sqrt{\Delta t}Z
 \right]
-\]
+$$
 
 where:
 
-\[
+$$
 Z\sim N(0,1)
-\]
+$$
 
 The model present value is estimated as:
 
-\[
+$$
 V_0
 =
 \mathbb E^{\mathbb Q}
 \left[
 e^{-r\theta}P
 \right]
-\]
+$$
 
-where \(\theta\) is the path-dependent payment time.
+where $\(\theta\)$ is the path-dependent payment time.
 
 ## Project Structure
 
@@ -144,9 +144,9 @@ numbers of Monte Carlo paths.
 
 The Monte Carlo standard error is expected to decrease at the rate:
 
-\[
+$$
 O(M^{-1/2})
-\]
+$$
 
 where \(M\) is the number of simulated paths.
 
